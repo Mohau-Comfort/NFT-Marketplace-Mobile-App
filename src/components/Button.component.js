@@ -6,6 +6,6 @@ export const Button = () => {
         <View>
             <Text>Button</Text>
         </View>
-    )
-}
+    );
+};
 

@@ -6,6 +6,6 @@ export const HomeHeader = () => {
         <View>
             <Text>HomeHeader</Text>
         </View>
-    )
-}
+    );
+};
 

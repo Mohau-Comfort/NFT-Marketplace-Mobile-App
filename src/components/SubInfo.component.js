@@ -6,6 +6,6 @@ export const SubInfo = () => {
         <View>
             <Text>SubInfo</Text>
         </View>
-    )
-}
+    );
+};
 
