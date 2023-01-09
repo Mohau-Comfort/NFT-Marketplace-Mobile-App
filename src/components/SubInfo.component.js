@@ -9,3 +9,9 @@ export const SubInfo = () => {
     );
 };
 
+export const People = () => { };
+export const EndDate = () => { };
+export const EthPrice = () => { };
+export const NFTTitle = () => { };
+
+
