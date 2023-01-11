@@ -30,7 +30,6 @@ export const NFTCard = ({ data }) => {
                 <CircleButton imgUrl={assets.heart} right={10} top={10} />
                 <SubInfo />
             </View>
-            <Text>NFTCard</Text>
         </View>
     )
 }
