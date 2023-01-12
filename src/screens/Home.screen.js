@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, SafeAreaView, Text, FlatList } from "react-native";
 import { COLORS, NFTData } from "../utilities";
 import { NFTCard, HomeHeader, FocusedStatusBar } from "../components";
