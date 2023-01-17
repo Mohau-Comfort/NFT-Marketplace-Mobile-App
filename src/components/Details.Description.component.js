@@ -1,10 +1,9 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text } from 'react-native';
 import React, { useState } from 'react';
 import { EthPrice, NFTTitle } from './SubInfo.component';
 import { COLORS, SIZES, FONTS } from '../utilities';
 
 export const DetailsDescription = ({ data }) => {
-
     const [text, setText] = useState(data.description.slice(0, 100));
     const [readMore, setReadMore] = useState(false);
 
@@ -77,4 +76,3 @@ export const DetailsDescription = ({ data }) => {
         </>
     );
 };
-

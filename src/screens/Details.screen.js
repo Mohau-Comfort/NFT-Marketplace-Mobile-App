@@ -5,7 +5,6 @@ import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsBid, Detail
 
 //Details Header
 const DetailsHeader = ({ data, navigation }) => (
-
     <View style={{ width: "100%", height: 373 }}>
         <Image
             source={data.image}
@@ -28,7 +27,7 @@ const DetailsHeader = ({ data, navigation }) => (
     </View>
 );
 
-//Details screen component
+
 export const Details = ({ route, navigation }) => {
     const { data } = route.params;
 
