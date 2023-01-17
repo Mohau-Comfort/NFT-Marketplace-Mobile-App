@@ -15,7 +15,7 @@ const DetailsHeader = ({ data, navigation }) => (
 
         <CircleButton
             imgUrl={assets.left}
-            handlePress={() => useNavigation().goBack()}
+            handlePress={() => navigation.goBack()}
             left={15}
             top={StatusBar.currentHeight + 10}
         />
@@ -65,7 +65,7 @@ export const Details = ({ route, navigation }) => {
                 }}
                 ListHeaderComponent={() => (
                     <React.Fragment>
-                        <DetailsHeader data={data} navigation={useNavigation()} />
+                        <DetailsHeader data={data} navigation={navigation} />
                         <SubInfo />
                         <View style={{ padding: SIZES.font }}>
                             <DetailsDescription data={data} />
