@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, SafeAreaView, Image, StatusBar, FlatList } from "react-native";
 import { COLORS, SIZES, SHADOWS, FONTS, assets } from "../utilities";
-import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsBid, DetailsDescription } from "../components";
+import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsBid, DetailsDescription } from "../components";;
 
 //Details Header
 const DetailsHeader = ({ data, navigation }) => (
@@ -15,7 +15,7 @@ const DetailsHeader = ({ data, navigation }) => (
 
         <CircleButton
             imgUrl={assets.left}
-            handlePress={() => navigation.goBack()}
+            handlePress={() => useNavigation().goBack()}
             left={15}
             top={StatusBar.currentHeight + 10}
         />
@@ -65,7 +65,7 @@ export const Details = ({ route, navigation }) => {
                 }}
                 ListHeaderComponent={() => (
                     <React.Fragment>
-                        <DetailsHeader data={data} navigation={navigation} />
+                        <DetailsHeader data={data} navigation={useNavigation()} />
                         <SubInfo />
                         <View style={{ padding: SIZES.font }}>
                             <DetailsDescription data={data} />
